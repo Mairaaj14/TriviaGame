@@ -7,69 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--CSS Link-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="main.js"></script>
+    <!--JavaScript && jQuery -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-            <h1>Trivia Game</h1>
-        </div>
-    </header>
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1 class="rules">Game Rules</h1>
-            <p>This trivia game consists of 5 questions, you have a total of 50 seconds to try to answer all 5 of them. </p>
-            <h2>
-                <button type="button" id="start-button">Start</button>
-            </h2>
-            <div id="show-timer"></div>
-            <!--First Question-->
-            <p class="question">1. What is Jerome's favorite pet?</p>
-            <ul class="answers">
-                <input type="radio"  name="q1" value="a" id="q1a"><label for="q1a">iguana</label>
-                <input type="radio"  name="q1" value="b" id="q1b"><label for="q1b">cat</label>
-                <input type="radio"  name="q1" value="c" id="q1c"><label for="q1c">dog</label>
-                <input type="radio"  name="q1" value="d" id="q1d"><label for="q1d">hamster</label>
-            </ul>
-            <br>
-            <!--Second Question-->
-            <p class="question">2. Where is UC Berkeley's Extension building located?</p>
-            <ul class="answers">
-                <input type="radio"  name="q2" value="a" id="q2a"><label for="q2a">190 Spear St</label>
-                <input type="radio"  name="q2" value="b" id="q2b"><label for="q2b">160 Spruce St</label>
-                <input type="radio"  name="q2" value="c" id="q2c"><label for="q2c">160 Stanyan St</label>
-                <input type="radio"  name="q2" value="d" id="q2d"><label for="q2d">160 Spear St</label>
-            </ul>
-            <br>
-             <!--Third Question-->
-            <p class="question">3. What does HTML stand for?</p>
-            <ul class="answers">
-                <input type="radio"  name="q3" value="a" id="q3a"><label for="q3a">Hyper Text Markup Language</label>
-                <input type="radio"  name="q3" value="b" id="q3b"><label for="q3b">Hyper Tech Markup Language</label>
-                <input type="radio"  name="q3" value="c" id="q3c"><label for="q3c">Hyper Touch Markup Language</label>
-                <input type="radio"  name="q3" value="d" id="q3d"><label for="q3d">Hyper Table Markup Language</label>
-            </ul>
-            <br>
-            <!--Fourth Question-->
-            <p class="question">4. Who played Neo in the Matrix? </p>
-            <ul class="answers">
-                <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Keannu Reeves</label>
-                <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Adam Sandler</label>
-                <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Jim Carey</label>
-                <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Dwayne Johnson</label>
-            </ul>
-            <br>
-            <!--Fifth Question-->
-            <p class="question">5. Which chess piece can only move diagonally?</p>
-            <ul class="answers">
-                 <input type="radio" name="q5" value="a" id="q4a"><label for="q4a">Queen</label>
-                 <input type="radio" name="q5" value="b" id="q4b"><label for="q4b">King</label>
-                 <input type="radio" name="q5" value="c" id="q4c"><label for="q4c">Bishop</label>
-                 <input type="radio" name="q5" value="d" id="q4d"><label for="q4d">Peasant</label>
-            </ul>
-            
-        </section>
+    <div class="main">
+    <div class="header">
+       <h1>Trivia Time!</h1>
     </div>
+    <div class="timer"></div>
+    <div class="question"></div>
+    <div class="answers">
+        <div>
+            <button class="answerchoice" id="buttonA"><h4></h4></button>
+        </div>
+        <div>
+            <button class="answerchoice" id="buttonB"><h4></h4></button>
+        </div>
+        <div>
+            <button class="answerchoice" id="buttonC"><h4></h4></button>
+        </div>
+        <div>
+            <button class="answerchoice" id="buttonD"><h4></h4></button>
+        </div>
+    </div>
+    </div>
+ 
+
     
 </body>
 </html>

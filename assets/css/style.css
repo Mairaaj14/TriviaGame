@@ -1,0 +1,41 @@
+.main {
+    border: solid;
+    height: 700px;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    background-image: url("../images/background3.jpg");
+    background-size: 100%;
+    position: relative;
+   
+}
+.header {
+    margin: 20px;
+    font-size: 35px;
+    font-family: cursive;
+    color:black;
+    padding: 17px;
+    float: none;
+    
+    
+}
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 35px;
+    float: left;
+    color: black;
+    background-image: url("../images/background3.jpg")
+}
+button.answerchoice {
+    display: none;
+}
+.questions {
+    font-size: 80px;
+
+
+}
+.answers {
+   font-size: 60px;
+ 
+}
